@@ -18,6 +18,10 @@ import matplotlib.pyplot as plt
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/')
+def home():
+    return 'Backend funcionando correctamente'
+
 interpreter = tf.lite.Interpreter(
     model_path='brain_tumor_cnn.tflite'
 )
