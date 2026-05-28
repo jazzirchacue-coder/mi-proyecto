@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 
-const API_URL = "https://brain-tumor-api-k7xn.onrender.com";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function App() {
 
